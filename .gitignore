@@ -38,3 +38,14 @@ Siscli/obj/Debug/net7.0/Siscli.GlobalUsings.g.cs
 Siscli/obj/Debug/net7.0/Siscli.pdb
 Siscli/obj/Debug/net7.0/ref/Siscli.dll
 Siscli/obj/Debug/net7.0/refint/Siscli.dll
+/Application/bin/Debug/net7.0
+*.vsidx
+/Application/obj
+/Domain/bin/Debug/net7.0
+/Domain/obj
+/Infrastructure/bin/Debug/net7.0
+/Infrastructure/obj
+/Presentation/bin/Debug/net7.0
+/Presentation/obj
+/.vs/Siscli/v17/.suo
+/.vs/Siscli/config/applicationhost.config
