@@ -28,7 +28,7 @@ public class ClienteRepository
     }
 
     // Método para obter um clente por Id
-    public async Task<Cliente> ObterClientePorId(long id)
+    public async Task<Cliente> ObterClientePorId(Guid id)
     {
         // Procura um cliente com o ID fornecido e retorna o primeiro registro
         return await _clientes.Find<Cliente>(cliente => cliente.Id == id).FirstOrDefaultAsync();

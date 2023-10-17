@@ -20,14 +20,26 @@ try
     var clienteRepository = new ClienteRepository(connectionString, databaseName);
 
     // Criar e adicionar um novo cliente
-    var novoCliente = new Cliente
-    {
-        Nome = "João da Silva",
-        Email = "joao@gmail.com"
-    };
+    Cliente novoCliente = new Cliente();
+    novoCliente.Id = new Guid();
+
+    Console.WriteLine("Digite cliente:");
+    novoCliente.Nome = Console.ReadLine();
+
+    Console.WriteLine("Digite o email:");
+    novoCliente.Email = Console.ReadLine();
 
     await clienteRepository.AdicionarCliente(novoCliente);
     Console.WriteLine("Novo cliente adicionado com sucesso ao MongoDB");
+
+    // Listar todos os clientes
+    var clientes = await clienteRepository.ObterTodosClientes();
+    Console.WriteLine("Listando todos os clientes");
+
+    foreach (var cliente in clientes)
+    {
+        Console.WriteLine($"Nome: {cliente.Nome}, Email: {cliente.Email}");
+    }
 
 }
 catch (Exception ex)
