@@ -1,6 +1,6 @@
-# CRUD MongoDB (Console Application)
+# CRUD MongoDB (Console Application) - COMENTADO
 
-Este é um projeto simples que demonstra operações CRUD (Create, Read, Update, Delete) em um banco de dados MongoDB usando C# e .NET. A aplicação de console interage com o banco de dados MongoDB para realizar operações básicas em uma coleção de clientes.
+Este é um projeto simples (comentado) que demonstra operações CRUD (Create, Read, Update, Delete) em um banco de dados MongoDB usando C# e .NET. A aplicação de console interage com o banco de dados MongoDB para realizar operações básicas em uma coleção de clientes.
 
 ## Funcionalidades
 
