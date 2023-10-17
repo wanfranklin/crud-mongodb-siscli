@@ -1,4 +1,4 @@
-namespace Siscli.Model;
+﻿namespace Domain.Models;
 
 public class Cliente
 {
